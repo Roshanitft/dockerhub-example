@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t Roshanitft/dp-alpine:latest .'
+        sh 'docker build -t roshanitft/dp-alpine:latest .'
       }
     }
     stage('Login') {
@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push Roshanitft/dp-alpine:latest'
+        sh 'docker push roshanitft/dp-alpine:latest'
       }
     }
   }
